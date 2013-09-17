@@ -1055,7 +1055,7 @@ public class ChatContainer extends SparkTabbedPane implements MessageListener, C
      */
     private void checkNotificationPreferences(final ChatRoom room, boolean customMsg, String customMsgText, String customMsgTitle) {
         LocalPreferences pref = SettingsManager.getLocalPreferences();
-      System.out.println("哈哈");
+//      System.out.println("哈哈");
         if (pref.getWindowTakesFocus()) {
             chatFrame.setState(Frame.NORMAL);
             chatFrame.setVisible(true);
