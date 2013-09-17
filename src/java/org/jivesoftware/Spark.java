@@ -106,7 +106,7 @@ public final class Spark {
 	    USER_SPARK_HOME = System.getProperties().getProperty("user.home") + "/" + getUserConf();
 	}
 	    //URL sss = Spark.class.getResource("/");
-		USER_SPARK_HOME="D:/EFMPX2010/EFMPX/SOURCE/IM/sparkSource/target/build";
+//		USER_SPARK_HOME="D:/EFMPX2010/EFMPX/SOURCE/IM/sparkSource/target/build";
         String current = System.getProperty("java.library.path");
         String classPath = System.getProperty("java.class.path");
 
