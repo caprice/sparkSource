@@ -1,0 +1,9 @@
+[submodule "src/plugins/organization"]
+	path = src/plugins/organization
+	url = https://github.com/kk580kk/organization.git
+[submodule "src/plugins/navigation"]
+	path = src/plugins/navigation
+	url = https://github.com/kk580kk/navigation.git
+[submodule "src/plugins/customizemenu"]
+	path = src/plugins/customizemenu
+	url = https://github.com/kk580kk/customizemenu.git
