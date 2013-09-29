@@ -82,7 +82,7 @@ public class LoginSettingDialog implements PropertyChangeListener {
     private ProxyPanel proxyPanel;
     private PkiPanel pkiPanel;
     private SsoPanel ssoPanel;
-    private BaosightPanel baosightPanel;
+    //private BaosightPanel baosightPanel;
 
     /**
      * Empty Constructor.
@@ -93,7 +93,8 @@ public class LoginSettingDialog implements PropertyChangeListener {
 	proxyPanel = new ProxyPanel();
 	ssoPanel = new SsoPanel();
 	pkiPanel = new PkiPanel();
-	baosightPanel = new BaosightPanel();
+	//abandon
+	//baosightPanel = new BaosightPanel();
     }
 
     /**
@@ -123,7 +124,7 @@ public class LoginSettingDialog implements PropertyChangeListener {
 	    tabbedPane.addTab(Res.getString("tab.pki"), pkiPanel);
 
 	//增加自己的web配置选项
-	tabbedPane.addTab("Web服务器", baosightPanel);
+	//tabbedPane.addTab("Web服务器", baosightPanel);
 	
 	// Construct main panel w/ layout.
 	final JPanel mainPanel = new JPanel();
@@ -171,14 +172,14 @@ public class LoginSettingDialog implements PropertyChangeListener {
 	    valid = valid && proxyPanel.validate_settings();
 	    valid = valid && ssoPanel.validate_settings();
 	    valid = valid && pkiPanel.validate_settings();
-	    valid = valid && baosightPanel.validate_settings();
+	    //valid = valid && baosightPanel.validate_settings();
 
 	    if (valid) {
 		generalPanel.saveSettings();
 		proxyPanel.saveSettings();
 		ssoPanel.saveSettings();
 		pkiPanel.saveSettings();
-		baosightPanel.saveSettings();
+		//baosightPanel.saveSettings();
 		SettingsManager.saveSettings();
 		optionsDialog.setVisible(false);
 	    } else {

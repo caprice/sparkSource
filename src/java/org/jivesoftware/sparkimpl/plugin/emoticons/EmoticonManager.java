@@ -149,8 +149,8 @@ public class EmoticonManager {
 
 							if (!unzipFile.exists()) {
 								// Copy over and expand :)
-								//URLFileSystem.copy(file.toURI().toURL(),
-										//newFile);
+								URLFileSystem.copy(file.toURI().toURL(),
+										newFile);
 								expandNewPack(newFile, newEmoticonDir);
 							}
 						}
