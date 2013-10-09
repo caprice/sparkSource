@@ -58,6 +58,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/plugins/customizemenu/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/plugins/organization/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/plugins/organization/resources" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
