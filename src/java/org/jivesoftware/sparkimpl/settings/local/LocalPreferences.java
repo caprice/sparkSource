@@ -437,6 +437,15 @@ public class LocalPreferences {
 	public void setWebURL(String weburl) {
 		props.setProperty("weburl", weburl);
 	}
+
+    //Service       属性的读写
+    public String getService() {
+        return props.getProperty("service");
+    }
+
+    public void setService(String service) {
+        props.setProperty("service", service);
+    }
 	
 	public String getNavi() {
 		return props.getProperty("navi");
