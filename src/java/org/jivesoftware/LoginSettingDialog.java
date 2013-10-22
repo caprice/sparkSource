@@ -1162,10 +1162,10 @@ public class LoginSettingDialog implements PropertyChangeListener {
                     new Insets(5, 5, 5, 5), 0, 0));
 
             //service的内容
-            add(serviceLabel, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0,
+            add(serviceLabel, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0,
                     GridBagConstraints.WEST, GridBagConstraints.NONE,
                     new Insets(5, 5, 5, 5), 0, 0));
-            add(serviceField, new GridBagConstraints(1, 2, 1, 1, 1.0, 0.0,
+            add(serviceField, new GridBagConstraints(1, 3, 1, 1, 1.0, 0.0,
                     GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL,
                     new Insets(5, 5, 5, 5), 0, 0));
 //	    add(naviLabel, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0,
