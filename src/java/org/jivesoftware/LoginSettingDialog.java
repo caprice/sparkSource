@@ -59,7 +59,7 @@ public class LoginSettingDialog implements PropertyChangeListener {
 
     private GeneralPanel generalPanel;
     private ProxyPanel proxyPanel;
-    //    private PkiPanel pkiPanel;
+        private PkiPanel pkiPanel;
     private SsoPanel ssoPanel;
     private BaosightPanel baosightPanel;
 
@@ -71,7 +71,7 @@ public class LoginSettingDialog implements PropertyChangeListener {
         generalPanel = new GeneralPanel();
         proxyPanel = new ProxyPanel();
         ssoPanel = new SsoPanel();
-//	pkiPanel = new PkiPanel();
+	pkiPanel = new PkiPanel();
         baosightPanel = new BaosightPanel();
     }
 
@@ -97,8 +97,8 @@ public class LoginSettingDialog implements PropertyChangeListener {
 
         if (!Default.getBoolean(Default.SSO_DISABLED))
             tabbedPane.addTab(Res.getString("tab.sso"), ssoPanel);
-//	if (!Default.getBoolean(Default.PKI_DISABLED))
-//	    tabbedPane.addTab(Res.getString("tab.pki"), pkiPanel);
+	if (!Default.getBoolean(Default.PKI_DISABLED))
+	    tabbedPane.addTab(Res.getString("tab.pki"), pkiPanel);
 
         //增加自己的web配置选项
         tabbedPane.addTab("Web服务器", baosightPanel);
@@ -147,14 +147,14 @@ public class LoginSettingDialog implements PropertyChangeListener {
             boolean valid = generalPanel.validate_settings();
             valid = valid && proxyPanel.validate_settings();
             valid = valid && ssoPanel.validate_settings();
-//	    valid = valid && pkiPanel.validate_settings();
+	    valid = valid && pkiPanel.validate_settings();
             valid = valid && baosightPanel.validate_settings();
 
             if (valid) {
                 generalPanel.saveSettings();
                 proxyPanel.saveSettings();
                 ssoPanel.saveSettings();
-//		pkiPanel.saveSettings();
+		pkiPanel.saveSettings();
                 baosightPanel.saveSettings();
                 SettingsManager.saveSettings();
                 optionsDialog.setVisible(false);
